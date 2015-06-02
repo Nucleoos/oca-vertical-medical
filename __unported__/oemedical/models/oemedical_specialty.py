@@ -21,6 +21,8 @@
 #/#############################################################################
 
 from openerp.osv import fields, orm
+from openerp.tools.translate import _
+
 
 class OeMedicalSpecialty(orm.Model):
     _name = 'oemedical.specialty'
@@ -33,5 +35,5 @@ class OeMedicalSpecialty(orm.Model):
     _sql_constraints = [
         ('name_uniq', 'UNIQUE(name)', 'Name must be unique!'),
     ]
-
+OeMedicalSpecialty()
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
